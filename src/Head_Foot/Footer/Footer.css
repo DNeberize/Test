@@ -1,0 +1,79 @@
+footer{
+  display: flex;
+  flex-direction: column;
+  height: 680px;
+  box-shadow: 1px 1px 10px black;
+      
+}
+#List_of_Lists{
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  height: 518px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  
+ 
+}
+#List_of_Lists div ul li {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24.38px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(37, 37, 37, 1);
+  list-style: none;
+  margin-top: 20px;
+  cursor: pointer;
+
+
+}
+#List_of_Lists div ul {
+  padding: 0;
+  line-height: 2;
+
+}
+#email{
+  width: 300px;
+  height: 50px;
+  border: 1px solid rgba(37, 37, 37, 0.5);
+  border-radius: 5px;
+  padding-left: 10px;
+  color: rgba(37, 37, 37, 0.5);
+  font-size: 16px;
+  margin-top: 65px;
+  margin-bottom: 30px;
+}
+#link_icons{
+  margin-top: 30px;
+  width: 100px;
+  gap: 20px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+#The_end{
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#The_end p{
+ width: 1100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
+#List_of_Lists div h2 {
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 28.04px;
+  color: rgba(37, 37, 37, 0.6);
+}
