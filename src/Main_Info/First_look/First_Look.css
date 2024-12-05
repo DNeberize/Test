@@ -50,8 +50,9 @@
   position: absolute;
   width: auto;
   z-index: 2;
-  left: 45%;
-  margin-top: -250px;
+  left: 55%;
+  scale: 1.1;
+  margin-top: -280px;
 }
 
 #First_info {
