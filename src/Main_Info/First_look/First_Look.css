@@ -18,6 +18,7 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 300px;
+  
 }
 
 #Grass img {
@@ -30,7 +31,7 @@
 #Grass button {
   position: absolute;
   z-index: 10;
-  left: 650px;
+  left: 0.5;
   width: 65px;
   height: 65px;
   border-radius: 45px;
