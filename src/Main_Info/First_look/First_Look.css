@@ -6,30 +6,31 @@
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 #Grass {
-  position: relative;
+
   width: 100%;
   height: 50px;
-  margin-top: -100px;
   z-index: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 300px;
   
 }
 
 #Grass img {
   display: inline-flex;
   width: 100%;
-  margin-bottom: 850px;
   height: 1000px;
+  overflow-y: hidden;
+  margin-top: -1330px;
 }
 
 #Grass button {
   position: absolute;
+  margin-top: -500px;
   z-index: 10;
   left: 0.5;
   width: 65px;
@@ -47,18 +48,19 @@
 
 #Dude {
   position: absolute;
-  width: 700px;
-  height: 695px;
-  margin-top: -320px;
+  width: auto;
   z-index: 2;
-  left: 700px;
+  left: 45%;
+  margin-top: -250px;
 }
 
 #First_info {
+  position:absolute;
   width: 700px;
   height: 300px;
-  margin-top: -200px;
-  margin-left: 100px;
+  margin-left: -500px;
+  margin-bottom: 200px;
+
 }
 
 #First_info h1 {
