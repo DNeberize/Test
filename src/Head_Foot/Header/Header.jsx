@@ -1,27 +1,6 @@
-import './Header.css';
-import { useReducer } from 'react';
-
-const ACTIONS = {
-  TOGGLE_STATES: "toggle_states",
-  TOGGLE_SPORTS: "toggle_sports",
-  TOGGLE_ODDS: "toggle_odds",
-  TOGGLE_OTHER: "toggle_other"
-};
-
-function reducer(state, action) {
-  switch (action.type) {
-    case ACTIONS.TOGGLE_STATES:
-      return { visibleItem: state.visibleItem === "one" ? "" : "one" };
-    case ACTIONS.TOGGLE_SPORTS:
-      return { visibleItem: state.visibleItem === "two" ? "" : "two" };
-    case ACTIONS.TOGGLE_ODDS:
-      return { visibleItem: state.visibleItem === "three" ? "" : "three" };
-    case ACTIONS.TOGGLE_OTHER:
-      return { visibleItem: state.visibleItem === "four" ? "" : "four" };
-    default:
-      return state;
-  }
-}
+import "./Header.css";
+import { useReducer } from "react";
+import { reducer, ACTIONS } from "./MenuReducer";
 
 function Header() {
   const [state, dispatch] = useReducer(reducer, { visibleItem: "" });
@@ -66,26 +45,38 @@ function Header() {
           </ul>
           <ul className="menu">
             <li
-              id="one"
-              style={{ visibility: state.visibleItem === "one" ? "visible" : "hidden" }}
+              id="State_Menu"
+              style={{
+                visibility:
+                  state.visibleItem === "State_Menu" ? "visible" : "hidden",
+              }}
             >
               States
             </li>
             <li
-              id="two"
-              style={{ visibility: state.visibleItem === "two" ? "visible" : "hidden" }}
+              id="Sports_Menu"
+              style={{
+                visibility:
+                  state.visibleItem === "Sports_Menu" ? "visible" : "hidden",
+              }}
             >
               Sports
             </li>
             <li
-              id="three"
-              style={{ visibility: state.visibleItem === "three" ? "visible" : "hidden" }}
+              id="Odds_Menu"
+              style={{
+                visibility:
+                  state.visibleItem === "Odds_Menu" ? "visible" : "hidden",
+              }}
             >
               Odds
             </li>
             <li
-              id="four"
-              style={{ visibility: state.visibleItem === "four" ? "visible" : "hidden" }}
+              id="Other_Menu"
+              style={{
+                visibility:
+                  state.visibleItem === "Other_Menu" ? "visible" : "hidden",
+              }}
             >
               Other
             </li>

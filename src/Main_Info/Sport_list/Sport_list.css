@@ -1,31 +1,29 @@
-
-#text_box{
+#text_box {
   height: 500px;
   margin-left: 100px;
   margin-bottom: 200px;
 }
 #text_box div h2 {
-    font-size: 32px;
-    font-weight: 600;
-    line-height: 39.01px;
-    text-align: left;
-    text-decoration-skip-ink: none;
-    color: rgba(37, 37, 37, 1);
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 39.01px;
+  text-align: left;
+  text-decoration-skip-ink: none;
+  color: rgba(37, 37, 37, 1);
 }
 #text_box div p {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 19.5px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    color: rgba(37, 37, 37, 0.5);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.5px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(37, 37, 37, 0.5);
 }
-#sports{
+#sports {
   height: 460px;
-  
 }
-#list{
+#list {
   display: flex;
   gap: 20px;
   list-style: none;
@@ -35,61 +33,55 @@
   overflow-y: hidden;
   margin-left: -100px;
 }
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   scrollbar-width: none;
-
 }
-.sport{
-
+.sport {
   height: 100%;
   border-radius: 8px;
   margin-top: 20px;
 
   justify-content: center;
   display: grid;
-
-
 }
-.sport img{
+.sport img {
   height: 340px;
   width: 100%;
-  
 }
-.sport_info{
+.sport_info {
   width: 100%;
   padding-left: 10px;
-
 }
 
-.sport_info div h3{
+.sport_info div h3 {
   font-family: Montserrat;
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 29.26px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    color: rgba(37, 37, 37, 1);
-    margin: 0;
-    margin-top: 10px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29.26px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(37, 37, 37, 1);
+  margin: 0;
+  margin-top: 10px;
 }
-.sport_info div p{
+.sport_info div p {
   font-family: Montserrat;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 24.38px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    color: rgba(37, 37, 37, 1);
-    margin: 0;
-    width: 300px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24.38px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(37, 37, 37, 1);
+  margin: 0;
+  width: 300px;
 }
-.sport_info div{
+.sport_info div {
   display: grid;
   grid-template-rows: 1fr 1fr;
 }
-.sport:hover{
+.sport:hover {
   cursor: pointer;
   background-color: rgb(231, 231, 231);
 }

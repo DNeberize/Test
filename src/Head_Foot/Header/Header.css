@@ -1,20 +1,19 @@
-:root{
-  font-family:Montserrat;
+:root {
+  font-family: Montserrat;
   font-size: 16px;
   font-weight: 500;
-  
 }
-header{
+header {
   height: 100px;
   width: 100%;
-  margin:0;
+  margin: 0;
   background-color: white;
   display: flex;
   align-items: center;
   position: fixed;
   z-index: 1000;
 }
-#Header_icon{
+#Header_icon {
   display: flex;
   width: 120px;
   height: 100%;
@@ -23,24 +22,21 @@ header{
   justify-content: center;
   align-items: center;
 }
-#Header_icon img{
+#Header_icon img {
   height: 35px;
-  width: 120px
+  width: 120px;
 }
-#Header_list_container{
+#Header_list_container {
   height: 100%;
   margin: 0;
 }
-#Header_list{
+#Header_list {
   display: flex;
   list-style: none;
   height: 100%;
   margin: 0;
   padding: 0;
   justify-content: space-between;
-
-  
-
 }
 .Header_list_element {
   height: 100%;
@@ -52,14 +48,13 @@ header{
   white-space: nowrap;
   cursor: pointer;
   color: rgba(37, 37, 37, 1);
-
 }
-.Header_list_element p{
+.Header_list_element p {
   font-size: 20px;
   padding-left: 5px;
   padding-top: 10px;
 }
-#secend_half{
+#secend_half {
   height: 100%;
   width: 100%;
   margin-right: 80px;
@@ -67,35 +62,33 @@ header{
   display: flex;
   align-items: center;
 }
-#secend_half img{
+#secend_half img {
   height: 22px;
   width: 22px;
 
   margin-right: 20px;
-
 }
-.menu{
+.menu {
   position: absolute;
   display: flex;
   height: 200px;
   width: 1500px;
-  visibility:hidden;
+  visibility: hidden;
   margin-left: 250px;
-
 }
-.menu li{
+.menu li {
   width: 200px;
   height: 100%;
   background-color: red;
   cursor: pointer;
   visibility: visible;
 }
-#two{
+#Sports_Menu {
   margin-left: -80px;
 }
-#three{
+#Odds_Menu {
   margin-left: -80px;
 }
-#four{
+#Other_Menu {
   margin-left: -30px;
 }

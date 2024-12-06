@@ -1,49 +1,9 @@
-import './Sport_list.css';
-import { useState, useEffect } from 'react';
-
+import "./Sport_list.css";
+import Print_Element from "./List_Elements/PrintListElements";
 function Sport_list() {
-  const [Person, setPerson] = useState([]);
-  const lenght = 15
-
-  useEffect(() => {
-    fetch("https://jsonplaceholder.typicode.com/photos")
-      .then((res) => res.json())
-      .then((data) => {
-        setPerson(data.slice(0, lenght));
-      });
-  }, []);
-
-  const Print_Person = () => {
-    if (Person.length !== lenght) {
-      return (
-        <li className='sport'>
-          <img src="./src/assets/nfl.png" alt="Loading" />
-          <div className='sport_info'>
-            <div>
-              <h3>Wait</h3>
-              <p>Loading...</p>
-            </div>
-          </div>
-        </li>
-      );
-    }
-
-    return Person.map((P) => (
-      <li key={P.id} className='sport'>
-        <img src={P.url} alt={P.title} />
-        <div className='sport_info'>
-          <div>
-            <h3>{P.id}</h3>
-            <p>{P.title}</p>
-          </div>
-        </div>
-      </li>
-    ));
-  };
-
   return (
     <>
-      <div id='text_box'>
+      <div id="text_box">
         <div>
           <h2>Popular Right Now</h2>
           <p>
@@ -52,9 +12,9 @@ function Sport_list() {
           </p>
         </div>
 
-        <div id='sports'>
-          <ul id='list'>
-            <Print_Person/>
+        <div id="sports">
+          <ul id="list">
+            <Print_Element />
           </ul>
         </div>
       </div>
