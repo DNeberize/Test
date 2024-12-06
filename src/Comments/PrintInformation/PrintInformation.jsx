@@ -24,5 +24,5 @@ const Print_Information = React.memo(({ TextCount }) => {
       <p className="Paragraph_Text">{Com.body}</p>
     </div>
   ));
-});
+}, []);
 export default Print_Information;
