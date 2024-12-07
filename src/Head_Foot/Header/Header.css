@@ -1,94 +1,121 @@
 :root {
   font-family: Montserrat;
-  font-size: 16px;
   font-weight: 500;
+  font-size: 16px;
 }
+
 header {
-  height: 100px;
-  width: 100%;
+  height: 10vh;
   margin: 0;
+  width: 100%;
   background-color: white;
   display: flex;
   align-items: center;
   position: fixed;
   z-index: 1000;
 }
+
 #Header_icon {
   display: flex;
-  width: 120px;
-  height: 100%;
-  margin-left: 100px;
-  margin-right: 80px;
+  width: 10vw;
+  min-width: 100px;
+  max-width: 120px;
+  margin: 0 3vw 0 5vw;
   justify-content: center;
   align-items: center;
 }
+
 #Header_icon img {
-  height: 35px;
-  width: 120px;
+  width: 100%;
+  margin: 0;
 }
+
 #Header_list_container {
   height: 100%;
   margin: 0;
-}
-#Header_list {
   display: flex;
+  position: relative;
+}
+
+#Header_list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
   list-style: none;
-  height: 100%;
   margin: 0;
   padding: 0;
-  justify-content: space-between;
+  min-width: 450px;
+  gap: 4vw;
 }
+
 .Header_list_element {
-  height: 100%;
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  margin-left: 40px;
-  width: auto;
+  margin-left: 5%;
+  width: 100%;
+  font-size: 0.8em;
   white-space: nowrap;
   cursor: pointer;
   color: rgba(37, 37, 37, 1);
+  font-size: 16px;
 }
+
 .Header_list_element p {
   font-size: 20px;
   padding-left: 5px;
   padding-top: 10px;
 }
-#secend_half {
-  height: 100%;
-  width: 100%;
-  margin-right: 80px;
-  direction: rtl;
-  display: flex;
+#Menu_icon_Box {
+  position: fixed;
+  display: none;
+  z-index: 1001;
   align-items: center;
+  left: 4vw;
+  height: 10vh;
+  justify-content: center;
 }
-#secend_half img {
-  height: 22px;
-  width: 22px;
+@media (max-width: 750px) {
+  #Header_list_container {
+    display: none;
+  }
+  header {
+    width: 100%;
+    justify-content: center;
+  }
+  #Menu_icon_Box {
+    display: inline-flex;
+  }
+}
 
-  margin-right: 20px;
+#Search_icon_Box {
+  position: fixed;
+  display: inline-flex;
+  align-items: center;
+  right: 4vw;
+  z-index: 1001;
+  height: 10vh;
+  justify-content: center;
 }
+
+
+
+#Menu_icon_Box img {
+  height: 30%;
+  width: auto;
+}
+
 .menu {
   position: absolute;
   display: flex;
-  height: 200px;
-  width: 1500px;
-  visibility: hidden;
-  margin-left: 250px;
+  height: 20vh;
+  width: 40vw;
+  margin-left: 10vw;
 }
+
 .menu li {
-  width: 200px;
+  width: 10vw;
   height: 100%;
   background-color: red;
   cursor: pointer;
-  visibility: visible;
-}
-#Sports_Menu {
-  margin-left: -80px;
-}
-#Odds_Menu {
-  margin-left: -80px;
-}
-#Other_Menu {
-  margin-left: -30px;
+  visibility: hidden;
 }

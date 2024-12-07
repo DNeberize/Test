@@ -5,8 +5,11 @@ import { reducer, ACTIONS } from "./MenuReducer";
 function Header() {
   const [state, dispatch] = useReducer(reducer, { visibleItem: "" });
 
-  const handleToggle = (actionType) => {
-    dispatch({ type: actionType });
+  const handleToggle = (menuName) => {
+    dispatch({
+      type: ACTIONS.TOGGLE_MENU,
+      payload: menuName === state.visibleItem ? "" : menuName,
+    });
   };
 
   return (
@@ -19,25 +22,25 @@ function Header() {
           <ul id="Header_list">
             <li className="Header_list_element">Betting Sites</li>
             <li
-              onClick={() => handleToggle(ACTIONS.TOGGLE_STATES)}
+              onClick={() => handleToggle("State_Menu")}
               className="Header_list_element"
             >
               Bet By State <p>&#8964;</p>
             </li>
             <li
-              onClick={() => handleToggle(ACTIONS.TOGGLE_SPORTS)}
+              onClick={() => handleToggle("Sports_Menu")}
               className="Header_list_element"
             >
               Sports <p>&#8964;</p>
             </li>
             <li
-              onClick={() => handleToggle(ACTIONS.TOGGLE_ODDS)}
+              onClick={() => handleToggle("Odds_Menu")}
               className="Header_list_element"
             >
               Odds <p>&#8964;</p>
             </li>
             <li
-              onClick={() => handleToggle(ACTIONS.TOGGLE_OTHER)}
+              onClick={() => handleToggle("Other_Menu")}
               className="Header_list_element"
             >
               Other <p>&#8964;</p>
@@ -82,10 +85,13 @@ function Header() {
             </li>
           </ul>
         </div>
-        <div id="secend_half">
-          <img src="./src/assets/search-icon.png" alt="Search Icon" />
-        </div>
       </header>
+      <div id="Search_icon_Box">
+        <img src="./src/assets/search-icon.png" alt="Search Icon" />
+      </div>
+      <div id="Menu_icon_Box">
+        <img src="./src/assets/menu icon.svg" alt="Menu Icon" />
+      </div>
     </>
   );
 }

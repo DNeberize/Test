@@ -40,6 +40,13 @@ p {
   gap: 20px;
   padding: 0;
 }
+@media (max-width: 750px) {
+  #books_list ul {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  
+  }
+}
 
 #books_list ul li {
   list-style: none;
