@@ -20,10 +20,6 @@ function First_Look() {
           <img id="Dude" src=".\src\assets\Guy.png" alt="" />
         </div>
       </div>
-      <div id="Grass">
-        <img src=".\src\assets\bg.png" alt="" />
-        <button></button>
-      </div>
     </>
   );
 }

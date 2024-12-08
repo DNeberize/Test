@@ -3,6 +3,17 @@ function Footer() {
   return (
     <>
       <footer>
+        <div id="Icons_for_Phone">
+          <div id="phone_Main_icon">
+            <img src="./src/assets/__ia_thumb.png" alt="Icon" />
+          </div>
+          <div id="phone_link_icons">
+            <img src=".\src\assets\facebook icon.png" alt="" />
+            <img src=".\src\assets\linkdin icon.png" alt="" />
+            <img src=".\src\assets\twitter icon.png" alt="" />
+          </div>
+        </div>
+
         <div id="List_of_Lists">
           <div>
             <h2>Company</h2>
@@ -54,6 +65,8 @@ function Footer() {
             Betting.com does not facilitate betting on sports. Betting.com is
             not a bookmaker and does not handle any payments for sports betting
             activities. Values quoted on the site hold no real or implied value.
+            <br />
+            <br />
             In New Jersey state, Game Lounge Limited possesses a Vendor
             Affiliate License, Vendor ID 91481, issued on 11 June 2019.
             <br />

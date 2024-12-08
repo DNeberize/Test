@@ -12,7 +12,8 @@
   margin-top: 150px;
 }
 .Information_Box {
-  width: 1200px;
+  width: 86%;
+  max-width: 1200px;
 }
 .Header_Text {
   font-size: 32px;
@@ -37,13 +38,26 @@
   width: 100%;
   margin-bottom: 100px;
   display: grid;
-  grid-template-columns: 400px 400px;
+  grid-template-columns: 35% 35%;
   gap: 70px;
+}
+@media (max-width: 750px) {
+  #marks {
+    grid-template-columns: 93%;
+  }
+  #marks div {
+    border-radius: 8px;
+    padding: 0 1vw 0 1vw;
+    box-shadow: 1px 1px 10px rgb(226, 226, 226);
+  }
+  .Paragraph_Text {
+    width: 90%;
+  }
 }
 #marks div {
   display: flex;
   align-items: center;
 }
 .icon {
-  height: 50px;
+  height: auto;
 }

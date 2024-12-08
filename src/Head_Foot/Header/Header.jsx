@@ -18,73 +18,53 @@ function Header() {
         <div id="Header_icon">
           <img src="./src/assets/__ia_thumb.png" alt="Icon" />
         </div>
-        <div id="Header_list_container">
-          <ul id="Header_list">
-            <li className="Header_list_element">Betting Sites</li>
-            <li
-              onClick={() => handleToggle("State_Menu")}
-              className="Header_list_element"
-            >
-              Bet By State <p>&#8964;</p>
-            </li>
-            <li
-              onClick={() => handleToggle("Sports_Menu")}
-              className="Header_list_element"
-            >
-              Sports <p>&#8964;</p>
-            </li>
-            <li
-              onClick={() => handleToggle("Odds_Menu")}
-              className="Header_list_element"
-            >
-              Odds <p>&#8964;</p>
-            </li>
-            <li
-              onClick={() => handleToggle("Other_Menu")}
-              className="Header_list_element"
-            >
-              Other <p>&#8964;</p>
-            </li>
-          </ul>
-          <ul className="menu">
-            <li
-              id="State_Menu"
-              style={{
-                visibility:
-                  state.visibleItem === "State_Menu" ? "visible" : "hidden",
-              }}
-            >
-              States
-            </li>
-            <li
-              id="Sports_Menu"
-              style={{
-                visibility:
-                  state.visibleItem === "Sports_Menu" ? "visible" : "hidden",
-              }}
-            >
-              Sports
-            </li>
-            <li
-              id="Odds_Menu"
-              style={{
-                visibility:
-                  state.visibleItem === "Odds_Menu" ? "visible" : "hidden",
-              }}
-            >
-              Odds
-            </li>
-            <li
-              id="Other_Menu"
-              style={{
-                visibility:
-                  state.visibleItem === "Other_Menu" ? "visible" : "hidden",
-              }}
-            >
-              Other
-            </li>
-          </ul>
-        </div>
+        <ul id="Header_list">
+          <li className="Header_list_element">Betting Sites</li>
+          <li
+            onClick={() => handleToggle("State_Menu")}
+            className="Header_list_element"
+          >
+            Bet By State <img src="./src/assets/Vector.png" alt="" />
+            {state.visibleItem === "State_Menu" && (
+              <div className="dropdown" id="State_Menu">
+                States Dropdown Content
+              </div>
+            )}
+          </li>
+          <li
+            onClick={() => handleToggle("Sports_Menu")}
+            className="Header_list_element"
+          >
+            Sports <img src="./src/assets/Vector.png" alt="" />
+            {state.visibleItem === "Sports_Menu" && (
+              <div className="dropdown" id="Sports_Menu">
+                Sports Dropdown Content
+              </div>
+            )}
+          </li>
+          <li
+            onClick={() => handleToggle("Odds_Menu")}
+            className="Header_list_element"
+          >
+            Odds <img src="./src/assets/Vector.png" alt="" />
+            {state.visibleItem === "Odds_Menu" && (
+              <div className="dropdown" id="Odds_Menu">
+                Odds Dropdown Content
+              </div>
+            )}
+          </li>
+          <li
+            onClick={() => handleToggle("Other_Menu")}
+            className="Header_list_element"
+          >
+            Other <img src="./src/assets/Vector.png" alt="" />
+            {state.visibleItem === "Other_Menu" && (
+              <div className="dropdown" id="Other_Menu">
+                Other Dropdown Content
+              </div>
+            )}
+          </li>
+        </ul>
       </header>
       <div id="Search_icon_Box">
         <img src="./src/assets/search-icon.png" alt="Search Icon" />

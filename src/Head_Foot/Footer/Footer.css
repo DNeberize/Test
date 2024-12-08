@@ -1,71 +1,124 @@
-footer {
-  display: flex;
-  flex-direction: column;
-  height: 680px;
-  box-shadow: 1px 1px 10px black;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+body,
+html {
+  overflow-x: hidden;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+footer {
+  padding: 10% 0 5%;
+  box-shadow: 1px 1px 10px rgb(163, 163, 163);
+  width: 100%;
+}
+
 #List_of_Lists {
   display: flex;
   align-items: center;
-  gap: 100px;
-  height: 518px;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  display: flex;
+  gap: 5vw;
+  width: 90%;
+  margin: 1% auto 0;
   justify-content: center;
 }
+
 #List_of_Lists div ul li {
-  font-family: Montserrat;
-  font-size: 16px;
+  font-family: Montserrat, sans-serif;
+  font-size: 1em;
   font-weight: 500;
-  line-height: 24.38px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
+  line-height: 8vh;
   color: rgba(37, 37, 37, 1);
   list-style: none;
-  margin-top: 20px;
   cursor: pointer;
 }
+
 #List_of_Lists div ul {
   padding: 0;
   line-height: 2;
 }
+
 #email {
-  width: 300px;
-  height: 50px;
+  width: 20vw;
+  height: 8vh;
   border: 1px solid rgba(37, 37, 37, 0.5);
   border-radius: 5px;
-  padding-left: 10px;
+  padding-left: 5%;
   color: rgba(37, 37, 37, 0.5);
-  font-size: 16px;
-  margin-top: 65px;
-  margin-bottom: 30px;
+  font-size: 1em;
+  max-width: 100%;
 }
+
 #link_icons {
-  margin-top: 30px;
-  width: 100px;
-  gap: 20px;
+  width: 5vw;
+  gap: 1vw;
   display: flex;
   justify-content: space-between;
+  position: absolute;
   cursor: pointer;
 }
+
 #The_end {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 10vh;
 }
+
 #The_end p {
-  width: 1100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 80%;
   text-align: center;
 }
+
 #List_of_Lists div h2 {
-  font-size: 19px;
+  font-size: 1.25em;
   font-weight: 500;
-  line-height: 28.04px;
   color: rgba(37, 37, 37, 0.6);
+}
+
+#Icons_for_Phone {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 8vh;
+}
+
+#Icons_for_Phone #phone_Main_icon {
+  width: 20vw;
+}
+
+#Icons_for_Phone #phone_Main_icon img {
+  width: 100%;
+}
+
+#Icons_for_Phone #phone_link_icons {
+  display: flex;
+  gap: 3vw;
+  width: 28vw;
+}
+
+@media (max-width: 750px) {
+  #Icons_for_Phone {
+    display: flex;
+  }
+  #List_of_Lists {
+    flex-direction: column;
+    gap: 2vw;
+  }
+  #email,
+  #List_of_Lists div ul li,
+  #link_icons {
+    display: none;
+  }
+  #List_of_Lists div h2 {
+    color: #000;
+    font-size: 1em;
+  }
+  #List_of_Lists div {
+    margin-top: 5vh;
+    justify-content: center;
+  }
 }

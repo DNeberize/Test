@@ -30,52 +30,75 @@ header {
   margin: 0;
 }
 
-#Header_list_container {
-  height: 100%;
-  margin: 0;
-  display: flex;
-  position: relative;
-}
-
 #Header_list {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
-  min-width: 450px;
+  width: 100%;
   gap: 4vw;
 }
 
 .Header_list_element {
-  display: inline-flex;
-  justify-content: center;
+  position: relative;
+  display: block;
+  flex-direction: column;
   align-items: center;
-  margin-left: 5%;
-  width: 100%;
-  font-size: 0.8em;
-  white-space: nowrap;
+  justify-content: center;
   cursor: pointer;
-  color: rgba(37, 37, 37, 1);
   font-size: 16px;
+  color: rgba(37, 37, 37, 1);
 }
 
-.Header_list_element p {
-  font-size: 20px;
-  padding-left: 5px;
-  padding-top: 10px;
+.Header_list_element img {
+  height: 1vh;
+  width: auto;
+  margin-bottom: 1px;
+  margin-left: 5px;
 }
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  z-index: 1000;
+  width: 150px;
+  text-align: center;
+}
+
+.dropdown:hover {
+  cursor: pointer;
+}
+
+#Search_icon_Box {
+  position: fixed;
+  display: inline-flex;
+  align-items: center;
+  top: 1vh;
+  right: 4vw;
+  z-index: 1001;
+  height: 10vh;
+  justify-content: center;
+}
+
 #Menu_icon_Box {
   position: fixed;
   display: none;
   z-index: 1001;
   align-items: center;
   left: 4vw;
-  height: 10vh;
+  height: 11vh;
   justify-content: center;
 }
+#Menu_icon_Box img {
+  scale: 1.5;
+}
 @media (max-width: 750px) {
-  #Header_list_container {
+  #Header_list {
     display: none;
   }
   header {
@@ -85,37 +108,4 @@ header {
   #Menu_icon_Box {
     display: inline-flex;
   }
-}
-
-#Search_icon_Box {
-  position: fixed;
-  display: inline-flex;
-  align-items: center;
-  right: 4vw;
-  z-index: 1001;
-  height: 10vh;
-  justify-content: center;
-}
-
-
-
-#Menu_icon_Box img {
-  height: 30%;
-  width: auto;
-}
-
-.menu {
-  position: absolute;
-  display: flex;
-  height: 20vh;
-  width: 40vw;
-  margin-left: 10vw;
-}
-
-.menu li {
-  width: 10vw;
-  height: 100%;
-  background-color: red;
-  cursor: pointer;
-  visibility: hidden;
 }
