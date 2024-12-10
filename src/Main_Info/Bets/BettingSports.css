@@ -1,17 +1,19 @@
 #Bets {
   width: 100%;
-  max-width: 1200px;
   margin: 0 auto;
   height: auto;
   margin-top: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #Bets1 {
-  padding: 0 20px;
+  width: 90%;
 }
 
 #Bets div h2 {
-  font-size: 32px;
+  font-size: 2em;
   font-weight: 600;
   line-height: 39.01px;
   text-align: left;
@@ -27,29 +29,42 @@
 }
 
 #Bets_list ul {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 5%;
   padding: 0;
+}
+#Bets_list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  flex-wrap: nowrap;
+}
+@media (max-width: 750px) {
+  #Bets_list ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  #Bets_list ul li p {
+    font-size: 70%;
+  }
 }
 
 #Bets_list ul li {
   list-style: none;
   border-radius: 8px;
-  height: 455px;
+  height: auto;
   cursor: pointer;
   display: flex;
   flex-direction: column;
-  width: calc(25% - 20px);
 }
 #Bets_list ul li img {
   width: 100%;
 }
 #Bets_list ul li p {
   color: black;
-  font-size: 20px;
+  font-size: 80%;
   font-weight: 500;
-  line-height: 25.2px;
+  margin: 0;
   text-align: left;
 }

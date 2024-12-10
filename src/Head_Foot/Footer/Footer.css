@@ -19,7 +19,6 @@ footer {
 
 #List_of_Lists {
   display: flex;
-  align-items: center;
   gap: 5vw;
   width: 90%;
   margin: 1% auto 0;
@@ -107,6 +106,7 @@ footer {
   #List_of_Lists {
     flex-direction: column;
     gap: 2vw;
+    align-items: center;
   }
   #email,
   #List_of_Lists div ul li,

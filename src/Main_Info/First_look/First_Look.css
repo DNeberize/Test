@@ -1,29 +1,37 @@
 #Page_1 {
   width: 100%;
-  height: 110vh;
+  height: 100vh;
   background-position: bottom;
   background-repeat: no-repeat;
+  background-size: cover;
   background-image: url("../../assets/bg.png");
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
-#Dude {
-  position: absolute;
-  top: 10%;
-  right: 5%;
-  height: 90%;
+#dude {
+  display: grid;
+  align-items: end; /* Aligns content (image) at the bottom */
+  justify-content: center; /* Centers image horizontally */
+}
+
+#dude img {
   width: auto;
+  height: auto;
+  max-height: 100%; /* Ensures image doesn't overflow container height */
+  max-width: 100%; /* Ensures image doesn't overflow container width */
 }
 
 #First_info {
   position: relative;
-  width: 45%;
   left: 10%;
-  top: 20%;
+  display: flex;
+  align-items: center;
 }
 
 #First_info h1 {
   font-weight: 900;
-  font-size: 40px;
+  font-size: 2em;
   color: rgba(37, 37, 37, 1);
   margin: 0;
 }
@@ -41,8 +49,8 @@
 }
 
 #btn_Sports {
-  width: 160px;
-  height: 50px;
+  width: 30%;
+  height: 8vh;
   background: rgba(245, 206, 18, 1);
   border-radius: 8px;
   display: flex;
@@ -56,8 +64,8 @@
 }
 
 #btn_Betting_Sites {
-  width: 160px;
-  height: 50px;
+  width: 30%;
+  height: 8vh;
   border-radius: 8px;
   display: flex;
   justify-content: center;
@@ -73,4 +81,66 @@
 #btn_Betting_Sites:active,
 #btn_Sports:active {
   opacity: 0.8;
+}
+
+@media (max-width: 750px) {
+  #Page_1 {
+    width: 100%;
+    height: 100vh;
+    display: block;
+    background-size: 650%;
+  }
+  #First_info {
+    position: relative;
+    display: inline-block;
+    width: 90%;
+    left: 5%;
+    top: 15%;
+    height: 85%;
+    align-self: start;
+    justify-content: start;
+  }
+
+  #First_info h1 {
+    font-weight: 900;
+    font-size: 1.1em;
+    color: rgba(37, 37, 37, 1);
+    margin: 0;
+  }
+
+  #First_info p {
+    color: rgba(37, 37, 37, 0.5);
+    font-weight: 400;
+    font-size: 0.9em;
+    line-height: 2em;
+    margin-top: 1em;
+  }
+
+  #btn_box {
+    display: grid;
+    gap: 5px;
+    width: 100%;
+    grid-template-rows: 1fr;
+    position: absolute;
+    bottom: 3vh;
+  }
+
+  #btn_Sports {
+    width: auto;
+    height: 8vh;
+  }
+
+  #btn_Betting_Sites {
+    width: auto;
+    height: 8vh;
+  }
+
+  #dude {
+  }
+  #dude img {
+    position: absolute;
+    height: 45%;
+    bottom: 20vh;
+    right: 5vh;
+  }
 }

@@ -25,7 +25,7 @@
   margin-bottom: 50px;
 }
 .Paragraph_Text {
-  font-size: 18px;
+  font-size: 1em;
   font-weight: 400;
   line-height: 27px;
   text-decoration-skip-ink: none;
@@ -57,7 +57,19 @@
 #marks div {
   display: flex;
   align-items: center;
+  min-width: none;
 }
 .icon {
   height: auto;
+  width: 10%;
+}
+.Marks_Paragraph_Text {
+  width: 80%;
+  margin-left: 5%;
+}
+#marks div section .Marks_Header_Text {
+  font-size: 1em;
+  margin: 1% 0 1% 0;
+  margin-left: 5%;
+  width: 100%;
 }
