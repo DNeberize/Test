@@ -1,7 +1,10 @@
 #News_box {
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  max-width: 1200px;
   margin: 100px auto;
+  justify-content: center;
+  align-items: center;
 }
 
 #News div h2 {
@@ -79,6 +82,12 @@ div p {
   margin-left: 20px;
   bottom: 20px;
   margin-bottom: 0;
+}
+#News_info {
+  width: 90%;
+}
+#News {
+  width: 90%;
 }
 
 .date {

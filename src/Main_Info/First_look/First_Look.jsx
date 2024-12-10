@@ -22,6 +22,9 @@ function First_Look() {
           <img src=".\src\assets\Guy.png" alt="" />
         </div>
       </div>
+      <div id="arrow_btn_container">
+        <button id="arrow_btn"></button>
+      </div>
     </>
   );
 }
