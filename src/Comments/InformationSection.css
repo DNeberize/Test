@@ -16,13 +16,13 @@
   max-width: 1500px;
 }
 .Header_Text {
-  font-size: 32px;
+  font-size: 1.5em;
   font-weight: 600;
-  line-height: 39.01px;
+  line-height: 1.1em;
   text-decoration-skip-ink: none;
   color: rgba(37, 37, 37, 1);
-  width: 60%;
-  margin-bottom: 50px;
+  width: 100%;
+  margin-bottom: 5vh;
 }
 .Paragraph_Text {
   font-size: 1em;
@@ -42,6 +42,10 @@
   gap: 70px;
 }
 @media (max-width: 750px) {
+  .Header_Text {
+    font-size: 1.1em;
+    margin-bottom: 3vh;
+  }
   #marks {
     grid-template-columns: 93%;
   }
