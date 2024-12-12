@@ -50,6 +50,9 @@
     padding: 0 1vw 0 1vw;
     box-shadow: 1px 1px 10px rgb(226, 226, 226);
   }
+  #marks div p {
+    margin-bottom: 0;
+  }
   .Paragraph_Text {
     width: 90%;
   }
