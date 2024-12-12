@@ -34,7 +34,7 @@
   font-size: 2rem;
   color: rgba(37, 37, 37, 1);
   margin: 0;
-  width: 75%;
+  width: 85%;
 }
 #arrow_btn_container {
   height: auto;
@@ -60,6 +60,7 @@
   color: rgba(37, 37, 37, 0.5);
   font-weight: 400;
   font-size: 1rem;
+  margin: 0;
 }
 
 #btn_box {
@@ -68,8 +69,8 @@
 }
 
 #btn_Sports {
-  width: 30%;
-  padding: 3% 0px 3% 0px;
+  width: 25%;
+  padding: 2% 0px 2% 0px;
   background: rgba(245, 206, 18, 1);
   border-radius: 8px;
   display: flex;
@@ -83,8 +84,8 @@
 }
 
 #btn_Betting_Sites {
-  width: 30%;
-  padding: 3% 0px 3% 0px;
+  width: 25%;
+  padding: 2% 0px 2% 0px;
   border-radius: 8px;
   display: flex;
   justify-content: center;
