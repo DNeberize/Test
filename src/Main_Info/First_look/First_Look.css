@@ -1,24 +1,23 @@
 #Page_1 {
   width: 100%;
-  height: 100vh;
+  height: calc(35vh + 32vw);
   background-position: bottom;
   background-repeat: no-repeat;
   background-image: url("../../assets/bg1.png");
   display: grid;
   grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
 }
 
 #dude {
   display: grid;
-  align-items: end; /* Aligns content (image) at the bottom */
-  justify-content: center; /* Centers image horizontally */
+  align-items: end;
+  justify-content: center;
 }
 
 #dude img {
-  width: auto;
-  height: auto;
-  max-height: 100%; /* Ensures image doesn't overflow container height */
-  max-width: 100%; /* Ensures image doesn't overflow container width */
+  width: calc(23vh + 20vw);
 }
 
 #First_info {
@@ -26,26 +25,30 @@
   left: 10%;
   display: flex;
   align-items: center;
+  margin-bottom: calc(7vh + 7vw);
+  height: calc(15vh + 15vw);
 }
 
 #First_info h1 {
   font-weight: 900;
-  font-size: 2em;
+  font-size: 2rem;
   color: rgba(37, 37, 37, 1);
   margin: 0;
+  width: 75%;
 }
 #arrow_btn_container {
-  width: 100%;
+  height: auto;
   display: flex;
+  width: 100%;
   justify-content: center;
   align-items: center;
-  position: relative;
-  margin-top: -14vh;
+  position: absolute;
+  margin-top: calc(-5vh - 5vw);
 }
 #arrow_btn {
   border-radius: 45px;
-  height: 7vh;
-  width: 7vh;
+  height: calc(2vh + 2vw);
+  width: calc(2vh + 2vw);
   margin: 0;
   background-image: url("../../assets/Vector.svg");
   background-repeat: no-repeat;
@@ -56,24 +59,23 @@
 #First_info p {
   color: rgba(37, 37, 37, 0.5);
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 #btn_box {
   display: flex;
-  gap: 30px;
-  margin-top: 30px;
+  gap: 5%;
 }
 
 #btn_Sports {
   width: 30%;
-  height: 8vh;
+  padding: 3% 0px 3% 0px;
   background: rgba(245, 206, 18, 1);
   border-radius: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 16px;
+  font-size: 1em;
   font-weight: 400;
   color: rgba(37, 37, 37, 1);
   border-width: 0;
@@ -82,7 +84,7 @@
 
 #btn_Betting_Sites {
   width: 30%;
-  height: 8vh;
+  padding: 3% 0px 3% 0px;
   border-radius: 8px;
   display: flex;
   justify-content: center;
@@ -117,6 +119,9 @@
     align-self: start;
     justify-content: start;
   }
+  #First_info div {
+    height: auto;
+  }
 
   #First_info h1 {
     font-weight: 900;
@@ -129,8 +134,8 @@
     color: rgba(37, 37, 37, 0.5);
     font-weight: 400;
     font-size: 0.9em;
-    line-height: 2em;
-    margin-top: 1em;
+    line-height: 1.6em;
+    margin-top: 0.5em;
   }
 
   #btn_box {
@@ -155,8 +160,9 @@
   #dude img {
     position: absolute;
     height: 45%;
-    bottom: 20vh;
+    bottom: 19vh;
     right: 4vh;
+    width: calc(40vw + 25vh);
   }
   #arrow_btn_container {
     display: none;

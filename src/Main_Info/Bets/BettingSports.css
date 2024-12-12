@@ -9,6 +9,7 @@
 
 #Bets1 {
   width: 90%;
+  max-width: 1500px;
 }
 
 #Bets div h2 {
@@ -20,7 +21,7 @@
 }
 
 #Bets div p {
-  font-size: 16px;
+  font-size: 1em;
   font-weight: 400;
   line-height: 19.5px;
   text-align: left;
@@ -32,6 +33,7 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 5%;
   padding: 0;
+  max-width: 1500px;
 }
 #Bets_list {
   display: flex;
@@ -52,18 +54,16 @@
 #Bets_list ul li {
   list-style: none;
   border-radius: 8px;
-  width: 20vw;
   cursor: pointer;
   display: flex;
   flex-direction: column;
 }
 #Bets_list ul li img {
   width: 100%;
-  height: 50vh;
 }
 #Bets_list ul li p {
   color: black;
-  font-size: 1.5em;
+  font-size: 1em;
   font-weight: 500;
   margin: 0;
   text-align: left;

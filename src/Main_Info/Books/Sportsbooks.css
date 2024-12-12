@@ -11,6 +11,7 @@
 #Books1 {
   width: 90%;
   margin: 0 auto;
+  max-width: 1500px;
 }
 
 h2 {
@@ -43,7 +44,7 @@ p {
 @media (max-width: 750px) {
   #books_list ul {
     grid-template-columns: 1fr;
-    gap: 50px;
+    gap: 15vh;
     justify-content: center;
   }
 }

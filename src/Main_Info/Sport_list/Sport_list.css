@@ -32,7 +32,6 @@
   margin: 0;
   overflow-x: scroll;
   overflow-y: hidden;
-  margin-left: -100px;
 }
 ::-webkit-scrollbar {
   scrollbar-width: none;

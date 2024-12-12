@@ -80,21 +80,18 @@ div p {
   font-size: 13px;
   width: auto;
   margin-left: 20px;
-  bottom: 20px;
+  bottom: 3vh;
   margin-bottom: 0;
 }
-#News_info {
-  width: 90%;
-}
-#News {
-  width: 90%;
-}
-
 .date {
-  margin-bottom: 45px;
+  margin-bottom: 8vh;
   left: 0;
 }
-
+#News_info,
+#News {
+  width: 90%;
+  max-width: 1500px;
+}
 .News_Grid div {
   display: flex;
   flex-direction: column;
