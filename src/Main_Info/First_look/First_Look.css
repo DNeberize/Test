@@ -14,10 +14,11 @@
   display: grid;
   align-items: end;
   justify-content: center;
+  margin-bottom: -20%;
 }
 
 #dude img {
-  width: calc(23vh + 20vw);
+  width: calc(25vh + 25vw);
 }
 
 #First_info {
@@ -165,9 +166,10 @@
     position: absolute;
     height: 45%;
     bottom: 19vh;
-    right: 4vh;
-    width: calc(40vw + 25vh);
+    width: auto;
+    right: 0;
   }
+
   #arrow_btn_container {
     display: none;
   }
