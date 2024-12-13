@@ -36,7 +36,7 @@ header {
   margin: 0;
   padding: 0;
   width: 100%;
-  gap: 4vw;
+  gap: 3vw;
 }
 
 .Header_list_element {
@@ -46,12 +46,12 @@ header {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 1em;
   color: rgba(37, 37, 37, 1);
 }
 
 .Header_list_element img {
-  height: 1vh;
+  height: 35%;
   width: auto;
   margin-bottom: 1px;
   margin-left: 5px;
@@ -78,11 +78,13 @@ header {
   position: fixed;
   display: inline-flex;
   align-items: center;
-  top: 1vh;
-  right: 4vw;
+  top: 4vh;
+  right: 1.8vw;
   z-index: 1001;
-  height: 10vh;
   justify-content: center;
+}
+#Search_icon_Box img {
+  width: 50%;
 }
 
 #Menu_icon_Box {
