@@ -126,6 +126,7 @@
 
   #First_info h1 {
     font-weight: 900;
+    width: 100%;
     font-size: 1.1em;
     color: rgba(37, 37, 37, 1);
     margin: 0;
